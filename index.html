@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Jequitibá</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/css/bootstrap-grid.min.css" integrity="sha512-Xj2sd25G+JgJYwo0cvlGWXoUekbLg5WvW+VbItCMdXrDoZRWcS/d40ieFHu77vP0dF5PK+cX6TIp+DsPfZomhw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+  <section class="home container-fluid">  
+    <nav class="nav">
+      <div class="container">
+          <div class="logo">
+              <a href="#" style="font-size: 36px;">Jequitibá</a>
+          </div>
+          
+          <div id="mainListDiv" class="main_list">
+              <ul class="navlinks">
+                  <li><a href="#" id="projeto">A Plataforna</a></li>
+                  <li><a href="#" id="triciclo">Triciclo</a></li>
+                  <li><a href="#" id="bicicletaRodinha">Bicicleta com rodinha</a></li>
+                  <li><a href="#bicicletaSemRodinha">Bicicleta sem rodinha</a></li>                  
+              </ul>
+          </div>
+          <span class="navTrigger">
+              <i></i>
+              <i></i>
+              <i></i>                       
+          </span>
+      </div>
+    </nav>
+    <div id="projetoDiv">
+      <h1>A Plataforma</h1>
+      <span></span>
+      <p>A Plataforma de Leitura Jequitibá visa oferecer essa possibilidade de criarmos um produto
+        com protagonismo da classe trabalhadora na indústria do livro digital. Além disso, a Jequitibá visa
+        cumprir o papel de espelhamento social ao integrar em seu acervo os diversos livros produzidos
+        pelas lideranças negras, indígenas e periféricas, promovendo a oportunidade de uma educação
+        antirracista.</p>
+    </div>
+    <div id="voiceSelect"> Selecionar voz  <select id="voiceList"></select></div>
+    <br><br>
+    <div id="tricicloDiv">
+      <div class="row">
+        <img src="boneca.png" class="bonecaimg" alt="">
+        <div class="boneca">
+          <button id="btnBo" value="bôô">BO</button>
+          <button id="btnNe" value="né">NE</button>
+          <button id="btnCa" value="ca">CA</button>  
+        </div>    
+      <button id="btnBoneca" class="buttonSpeak" value="boneca"><i class="bi bi-megaphone-fill"></i></button>      
+      </div>
+      <div class="row">
+        <img src="cavalo.png" class="cavaloimg" alt="">
+        <div class="cavalo">
+          <button id="btnCav" value="ca">CA</button>
+          <button id="btnVa" value="vaa">VA</button>
+          <button id="btnLo" value="li">LI</button>  
+          <button id="btnNho" value="nhô">NHO</button>  
+        </div>    
+      <button id="btnCavalo" class="buttonSpeak" value="cavalinho"><i class="bi bi-megaphone-fill"></i></button>      
+      </div>
+      <div class="row">
+        <img src="bicicleta.png" class="bicicletaimg" alt="">
+        <div class="bicicleta">
+          <button id="btnBi" value="bi">BI</button>
+          <button id="btnCi" value="si">CI</button>
+          <button id="btnCle" value="clé">CLE</button>  
+          <button id="btnTa" value="tá">TA</button>  
+        </div>    
+      <button id="btnBicicleta" class="buttonSpeak" value="bicicleta"><i class="bi bi-megaphone-fill"></i></button>      
+      </div>
+
+    </div>
+    
+    <div id="bicicletaRodinhaDiv"> 
+           
+      <div class="btn-group btn-group-justified">
+        <button type="button" class="btn parlenda" id="cade1" value="Cadê">Cadê </button>
+        <button type="button" class="btn parlenda" id="o1" value="ô">o </button>
+        <button type="button" class="btn parlenda" id="toucinho" value="toucinho">toucinho </button>
+        <button type="button" class="btn parlenda" id="que" value="que">que </button>        
+        <button type="button" class="btn parlenda" id="estava" value="estava">estava </button>
+        <button type="button" class="btn parlenda" id="aqui" value="aqui">aqui?</button>      
+        <button type="button" class="btn parlendaOuvir" id="btnFrase1" value="Cadê o toucinho que estava aqui?"><i class="bi bi-megaphone-fill"></i></button>
+        <button type="button" class="btn parlenda" id="o2" value="ô">O</button>
+        <button type="button" class="btn parlenda" id="gato1" value="gato">gato</button>
+        <button type="button" class="btn parlenda" id="comeu" value="comeu">comeu.</button>
+        <button type="button" class="btn parlendaOuvir" id="btnFrase2" value="O gato comeu"><i class="bi bi-megaphone-fill"></i></button>
+      </div>
+      <br><br>
+      <div class="btn-group btn-group-justified">
+        <button class="parlenda" id="cade2" value="Cadê">Cadê</button>
+        <button class="parlenda" id="o3" value="ô">o </button>
+        <button class="parlenda" id="gato2" value="gato">gato?</button>
+        <button class="parlendaOuvir" id="btnFrase3" value="Cadê o gato?"><i class="bi bi-megaphone-fill"></i></button>
+        <button class="parlenda" id="foi" value="foi">Foi</button>
+        <button class="parlenda" id="para" value="para">para</button>
+        <button class="parlenda" id="o4" value="ô">o</button>
+        <button class="parlenda" id="mato" value="mato">mato.</button>
+        <button class="parlendaOuvir" id="btnFrase4" value="Foi para o mato"><i class="bi bi-megaphone-fill"></i></button>
+      </div>
+      <br><br>
+      <div class="btn-group btn-group-justified">
+        <button class="parlenda" id="cade3" value="Cadê">Cadê</button>
+        <button class="parlenda" id="o5" value="ô">o</button>
+        <button class="parlenda" id="mato2" value="mato">mato?</button>
+        <button class="parlendaOuvir" id="btnFrase5" value="Cadê o mato?"><i class="bi bi-megaphone-fill"></i></button>      
+        <button class="parlenda" id="o6" value="ô">O</button>
+        <button class="parlenda" id="fogo" value="fogo">fogo</button>
+        <button class="parlenda" id="queimou" value="queimou">queimou.</button>
+        <button class="parlendaOuvir" id="btnFrase6" value="O fogo queimou"><i class="bi bi-megaphone-fill"></i></button>
+      </div>
+      <br><br>
+      <div class="btn-group btn-group-justified">
+        <button class="parlenda" id="cade4" value="Cadê">Cadê</button>
+        <button class="parlenda" id="o7" value="ô">o</button>        
+        <button class="parlenda" id="fogo2" value="fogo">fogo?</button>
+        <button class="parlendaOuvir" id="btnFrase7" value="Cadê o fogo?"><i class="bi bi-megaphone-fill"></i></button>
+        <button class="parlenda" id="a" value="a">A</button>
+        <button class="parlenda" id="agua" value="água">água</button>
+        <button class="parlenda" id="apagou" value="apagou">apagou.</button>
+        <button class="parlendaOuvir" id="btnFrase8" value="A água apagou"><i class="bi bi-megaphone-fill"></i></button>
+      </div>
+      <br><br>
+      <div class="btn-group btn-group-justified">
+        <button class="parlenda" id="cade5" value="Cadê">Cadê</button>
+        <button class="parlenda" id="a2" value="a">a</button>        
+        <button class="parlenda" id="agua2" value="água">água?</button>
+        <button class="parlendaOuvir" id="btnFrase9" value="Cadê a água?"><i class="bi bi-megaphone-fill"></i></button>
+        <button class="parlenda" id="o8" value="ô">O</button>
+        <button class="parlenda" id="boi" value="boi">boi</button>
+        <button class="parlenda" id="bebeu" value="bebeu">bebeu.</button>
+        <button class="parlendaOuvir" id="btnFrase10" value="O boi bebeu."><i class="bi bi-megaphone-fill"></i></button>
+      </div>
+      <br><br>
+      <div class="btn-group btn-group-justified">
+        <button class="parlenda" id="cade6" value="Cadê">Cadê</button>
+        <button class="parlenda" id="o9" value="ô">o</button>        
+        <button class="parlenda" id="boi2" value="boi">boi?</button>
+        <button class="parlendaOuvir" id="btnFrase11" value="Cadê o boi?"><i class="bi bi-megaphone-fill"></i></button>
+        <button class="parlenda" id="foi2" value="foi">Foi</button>
+        <button class="parlenda" id="amassar" value="amassar">amassar</button>
+        <button class="parlenda" id="o10" value="ô">o</button>
+        <button class="parlenda" id="trigo" value="trigo">trigo.</button>
+        <button class="parlendaOuvir" id="btnFrase12" value="Foi amassar o trigo."><i class="bi bi-megaphone-fill"></i></button>
+      </div>
+      <br><br>
+      <div class="btn-group btn-group-justified">
+        <button class="parlenda" id="cade7" value="Cadê">Cadê</button>
+        <button class="parlenda" id="o11" value="ô">o</button>        
+        <button class="parlenda" id="trigo2" value="trigo">trigo?</button>
+        <button class="parlendaOuvir" id="btnFrase13" value="Cadê o trigo?"><i class="bi bi-megaphone-fill"></i></button>
+        <button class="parlenda" id="a3" value="A">A</button>
+        <button class="parlenda" id="galinha" value="galinha">galinha</button>
+        <button class="parlenda" id="espalhou" value="espalhou">espalhou.</button>        
+        <button class="parlendaOuvir" id="btnFrase14" value="A galinha espalhou."><i class="bi bi-megaphone-fill"></i></button>
+      </div>
+      <br><br>
+      <div class="btn-group btn-group-justified">
+        <button class="parlenda" id="cade8" value="Cadê">Cadê</button>
+        <button class="parlenda" id="a4" value="a">a</button>        
+        <button class="parlenda" id="galinha2" value="galinha">galinha?</button>
+        <button class="parlendaOuvir" id="btnFrase15" value="Cadê a galinha?"><i class="bi bi-megaphone-fill"></i></button>
+        <button class="parlenda" id="foi3" value="Foi">Foi</button>
+        <button class="parlenda" id="botar" value="botar">botar</button>
+        <button class="parlenda" id="ovo" value="ovo">ovo.</button>        
+        <button class="parlendaOuvir" id="btnFrase16" value="Foi botar ovo."><i class="bi bi-megaphone-fill"></i></button>
+      </div>
+      <br><br>
+      <div class="btn-group btn-group-justified">
+        <button class="parlenda" id="cade9" value="Cadê">Cadê</button>
+        <button class="parlenda" id="o12" value="ô">o</button>        
+        <button class="parlenda" id="ovo2" value="ovo">ovo?</button>
+        <button class="parlendaOuvir" id="btnFrase17" value="Cadê o ovo?"><i class="bi bi-megaphone-fill"></i></button>
+        <button class="parlenda" id="o13" value="ô">O</button>
+        <button class="parlenda" id="padre" value="padre">padre</button>
+        <button class="parlenda" id="comeu2" value="comeu">comeu.</button>        
+        <button class="parlendaOuvir" id="btnFrase18" value="O padre comeu."><i class="bi bi-megaphone-fill"></i></button>
+      </div>
+      <br><br>
+      <div class="btn-group btn-group-justified">
+        <button class="parlenda" id="cade10" value="Cadê">Cadê</button>
+        <button class="parlenda" id="o14" value="ô">o</button>        
+        <button class="parlenda" id="padre2" value="padre">padre?</button>
+        <button class="parlendaOuvir" id="btnFrase19" value="Cadê o padre?"><i class="bi bi-megaphone-fill"></i></button>
+        <button class="parlenda" id="foi4" value="Foi">Foi</button>
+        <button class="parlenda" id="rezar" value="rezar">rezar</button>
+        <button class="parlenda" id="a5" value="a">a</button>        
+        <button class="parlenda" id="missa" value="missa">missa.</button>        
+        <button class="parlendaOuvir" id="btnFrase20" value="Foi rezar a missa."><i class="bi bi-megaphone-fill"></i></button>
+      </div>
+      <br><br>
+      <div class="btn-group btn-group-justified">
+        <button class="parlenda" id="cade11" value="Cadê">Cadê</button>
+        <button class="parlenda" id="a6" value="a">a</button>        
+        <button class="parlenda" id="missa2" value="missa">missa?</button>
+        <button class="parlendaOuvir" id="btnFrase21" value="Cadê a missa?"><i class="bi bi-megaphone-fill"></i></button>
+        <button class="parlenda" id="esta" value="Está">Está</button>
+        <button class="parlenda" id="no" value="no">no</button>
+        <button class="parlenda" id="altar" value="altar">altar.</button> 
+        <button class="parlendaOuvir" id="btnFrase22" value="Está no altar."><i class="bi bi-megaphone-fill"></i></button>
+      </div>
+      <br><br>
+      <div class="btn-group btn-group-justified">
+        <button class="parlenda" id="cade12" value="Cadê">Cadê</button>
+        <button class="parlenda" id="o15" value="ô">o</button>        
+        <button class="parlenda" id="altar2" value="altar">altar?</button>
+        <button class="parlendaOuvir" id="btnFrase23" value="Cadê o altar?"><i class="bi bi-megaphone-fill"></i></button>
+        <button class="parlenda" id="esta2" value="Está">Está</button>
+        <button class="parlenda" id="na" value="na">na</button>
+        <button class="parlenda" id="igreja" value="igreja">igreja.</button> 
+        <button class="parlendaOuvir" id="btnFrase24" value="Está na igreja."><i class="bi bi-megaphone-fill"></i></button>
+      </div>
+      <br><br>
+      <div class="btn-group btn-group-justified">
+        <button class="parlenda" id="cade13" value="Cadê">Cadê</button>
+        <button class="parlenda" id="a7" value="a">a</button>        
+        <button class="parlenda" id="igreja2" value="igreja">igreja?</button>
+        <button class="parlendaOuvir" id="btnFrase25" value="Cadê a igreja?"><i class="bi bi-megaphone-fill"></i></button>
+        <button class="parlenda" id="fica" value="fica">Fica</button>
+        <button class="parlenda" id="por" value="por">por</button>
+        <button class="parlenda" id="aqui2" value="aqui">aqui,</button> 
+        <button class="parlenda" id="por2" value="por">por</button>
+        <button class="parlenda" id="aqui3" value="aqui">aqui,</button> 
+        <button class="parlenda" id="por3" value="por">por</button>
+        <button class="parlenda" id="aqui4" value="aqui">aqui!</button> 
+        <button class="parlendaOuvir" id="btnFrase26" value="Fica por aqui, por aqui, por aqui!"><i class="bi bi-megaphone-fill"></i></button>
+      </div>
+      <br><br>
+     
+    </div>
+  </section>
+
+  <footer>
+    <div class="strip d-flex px-4 py-0 bg-dark" style="background-color: black;">
+        <div class="col-sm-6" style="text-align: right;">
+          <p class="tml-4" style="font-size: 10px; color: #fff;"><span>Copyright 2023 - Jequitiba by <a href="https://github.com/mendozainty" style="font-size: 10px; color: #fff; text-decoration: none;"> @mendozainty</a></span></p>
+        </div>
+        <div class="col-sm-6" style="text-align: left;">
+          <p class="ml-4" style="font-size: 10px; color: #fff;">
+            <span class="ml-5"><a href="images.html"  style="font-size: 10px; color: #fff; text-decoration: none;">Images credits</a></span>
+          </p>
+        </div>                 
+    </div>
+  </footer>
+  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+   
+  </body>
+</html>
