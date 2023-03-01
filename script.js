@@ -1,6 +1,8 @@
 $(document).ready(function () {
   const synth = window.speechSynthesis; 
   const voiceList = document.querySelector('#voiceList');
+  const voiceSelect = document.querySelector('select');
+  let voices = [];  
   const btnBo = document.querySelector('#btnBo');
   const btnNe = document.querySelector('#btnNe');  
   const btnCa = document.querySelector('#btnCa');
@@ -129,8 +131,24 @@ $(document).ready(function () {
   const btnaqui2 = document.querySelector('#aqui2');   
   const btnaqui3 = document.querySelector('#aqui3');   
   const btnaqui4 = document.querySelector('#aqui4');   
-  const voiceSelect = document.querySelector('select');
-  let voices = [];  
+  const btnnas = document.querySelector('#nas');   
+  const btngrandes = document.querySelector('#grandes');   
+  const btncidades = document.querySelector('#cidades');   
+  const btnFrase27 = document.querySelector('#btnFrase27');   
+  const btnos = document.querySelector('#os');   
+  const btnbombeiros = document.querySelector('#bombeiros');   
+  const btnestao = document.querySelector('#estao');   
+  const btnFrase28 = document.querySelector('#btnFrase28');   
+  const btnsempre = document.querySelector('#sempre');   
+  const btnde = document.querySelector('#de');   
+  const btnplantao = document.querySelector('#plantao');   
+  const btnFrase29 = document.querySelector('#btnFrase29');   
+  const btne = document.querySelector('#e');   
+  const btntreinam = document.querySelector('#treinam');   
+  const btnnum = document.querySelector('#num');   
+  const btnquartel = document.querySelector('#quartel');   
+  const btnbtnFrase30 = document.querySelector('#btnFrase30');   
+ 
   function populateVoiceList() {
     voices = synth.getVoices();
     for (let i = 0; i < voices.length ; i++) {  
@@ -153,6 +171,8 @@ $(document).ready(function () {
   $("#projetoDiv").toggleClass("hiden", true);
   $("#tricicloDiv").toggleClass("hiden", true);
   $("#bicicletaRodinhaDiv").toggleClass("hiden", true);
+  $("#bicicletaSemRodinhaDiv").toggleClass("hiden", true);
+
   $('.navTrigger').on("click", function () {
     $(this).toggleClass('active');    
     $("#mainListDiv").toggleClass("show_list");
@@ -167,6 +187,7 @@ $(document).ready(function () {
     $("#tricicloDiv").toggleClass("hiden", true);
     $("#bicicletaRodinhaDiv").toggleClass("hiden", true);
     $('#voiceSelect').toggleClass('hiden', true);
+    $("#bicicletaSemRodinhaDiv").toggleClass("hiden", true);
     $("#projetoDiv").toggleClass('hiden', false);
     $("#projetoDiv").toggleClass("active", true); 
     $('#projetoDiv').fadeIn();
@@ -178,6 +199,7 @@ $(document).ready(function () {
   $('#triciclo').on("click", function(){ 
     $("#projetoDiv").toggleClass("hiden", true);
     $("#bicicletaRodinhaDiv").toggleClass("hiden", true);
+    $("#bicicletaSemRodinhaDiv").toggleClass("hiden", true);
     $("#tricicloDiv").toggleClass('hiden', false);
     $('#voiceSelect').toggleClass('hiden', false);
     $('#voiceSelect').toggleClass("voiceActive", true);
@@ -187,11 +209,192 @@ $(document).ready(function () {
   $('#bicicletaRodinha').on("click", function(){    
     $("#projetoDiv").toggleClass("hiden", true);
     $("#tricicloDiv").toggleClass("hiden", true);
+    $("#bicicletaSemRodinhaDiv").toggleClass("hiden", true);
     $("#bicicletaRodinhaDiv").toggleClass('hiden', false);
     $('#voiceSelect').toggleClass('hiden', false);
     $('#voiceSelect').toggleClass("voiceActive", true);
     $("#bicicletaRodinhaDiv").toggleClass("active", true); 
     $('#bicicletaRodinhaDiv').fadeIn();    
+  })
+  $('#bicicletaSemRodinha').on("click", function(){    
+    $("#projetoDiv").toggleClass("hiden", true);
+    $("#tricicloDiv").toggleClass("hiden", true);
+    $("#bicicletaRodinhaDiv").toggleClass('hiden', true);
+    $("#bicicletaSemRodinhaDiv").toggleClass("hiden", false);
+    $('#voiceSelect').toggleClass('hiden', false);
+    $('#voiceSelect').toggleClass("voiceActive", true);
+    $("#bicicletaSemRodinhaDiv").toggleClass("active", true); 
+    $('#bicicletaSemRodinhaDiv').fadeIn();    
+  })
+  btnbtnFrase30.addEventListener('click', () => {
+    var toSpeak = new SpeechSynthesisUtterance(btnbtnFrase30.value);
+    var voiceName = voiceList.selectedOptions[0].getAttribute('data-name');
+    voices.forEach((voice) => {
+      if(voice.name === voiceName){
+        toSpeak.voice = voice;
+      }
+    })
+    synth.speak(toSpeak);
+  })
+  btnquartel.addEventListener('click', () => {
+    var toSpeak = new SpeechSynthesisUtterance(btnquartel.value);
+    var voiceName = voiceList.selectedOptions[0].getAttribute('data-name');
+    voices.forEach((voice) => {
+      if(voice.name === voiceName){
+        toSpeak.voice = voice;
+      }
+    })
+    synth.speak(toSpeak);
+  })
+  btnnum.addEventListener('click', () => {
+    var toSpeak = new SpeechSynthesisUtterance(btnnum.value);
+    var voiceName = voiceList.selectedOptions[0].getAttribute('data-name');
+    voices.forEach((voice) => {
+      if(voice.name === voiceName){
+        toSpeak.voice = voice;
+      }
+    })
+    synth.speak(toSpeak);
+  })
+  btntreinam.addEventListener('click', () => {
+    var toSpeak = new SpeechSynthesisUtterance(btntreinam.value);
+    var voiceName = voiceList.selectedOptions[0].getAttribute('data-name');
+    voices.forEach((voice) => {
+      if(voice.name === voiceName){
+        toSpeak.voice = voice;
+      }
+    })
+    synth.speak(toSpeak);
+  })
+  btne.addEventListener('click', () => {
+    var toSpeak = new SpeechSynthesisUtterance(btne.value);
+    var voiceName = voiceList.selectedOptions[0].getAttribute('data-name');
+    voices.forEach((voice) => {
+      if(voice.name === voiceName){
+        toSpeak.voice = voice;
+      }
+    })
+    synth.speak(toSpeak);
+  })
+  btnFrase29.addEventListener('click', () => {
+    var toSpeak = new SpeechSynthesisUtterance(btnFrase29.value);
+    var voiceName = voiceList.selectedOptions[0].getAttribute('data-name');
+    voices.forEach((voice) => {
+      if(voice.name === voiceName){
+        toSpeak.voice = voice;
+      }
+    })
+    synth.speak(toSpeak);
+  })
+  btnplantao.addEventListener('click', () => {
+    var toSpeak = new SpeechSynthesisUtterance(btnplantao.value);
+    var voiceName = voiceList.selectedOptions[0].getAttribute('data-name');
+    voices.forEach((voice) => {
+      if(voice.name === voiceName){
+        toSpeak.voice = voice;
+      }
+    })
+    synth.speak(toSpeak);
+  })
+  btnde.addEventListener('click', () => {
+    var toSpeak = new SpeechSynthesisUtterance(btnde.value);
+    var voiceName = voiceList.selectedOptions[0].getAttribute('data-name');
+    voices.forEach((voice) => {
+      if(voice.name === voiceName){
+        toSpeak.voice = voice;
+      }
+    })
+    synth.speak(toSpeak);
+  })
+  btnsempre.addEventListener('click', () => {
+    var toSpeak = new SpeechSynthesisUtterance(btnsempre.value);
+    var voiceName = voiceList.selectedOptions[0].getAttribute('data-name');
+    voices.forEach((voice) => {
+      if(voice.name === voiceName){
+        toSpeak.voice = voice;
+      }
+    })
+    synth.speak(toSpeak);
+  })
+  btnFrase28.addEventListener('click', () => {
+    var toSpeak = new SpeechSynthesisUtterance(btnFrase28.value);
+    var voiceName = voiceList.selectedOptions[0].getAttribute('data-name');
+    voices.forEach((voice) => {
+      if(voice.name === voiceName){
+        toSpeak.voice = voice;
+      }
+    })
+    synth.speak(toSpeak);
+  })
+  btnestao.addEventListener('click', () => {
+    var toSpeak = new SpeechSynthesisUtterance(btnestao.value);
+    var voiceName = voiceList.selectedOptions[0].getAttribute('data-name');
+    voices.forEach((voice) => {
+      if(voice.name === voiceName){
+        toSpeak.voice = voice;
+      }
+    })
+    synth.speak(toSpeak);
+  })
+  btnbombeiros.addEventListener('click', () => {
+    var toSpeak = new SpeechSynthesisUtterance(btnbombeiros.value);
+    var voiceName = voiceList.selectedOptions[0].getAttribute('data-name');
+    voices.forEach((voice) => {
+      if(voice.name === voiceName){
+        toSpeak.voice = voice;
+      }
+    })
+    synth.speak(toSpeak);
+  })
+  btnos.addEventListener('click', () => {
+    var toSpeak = new SpeechSynthesisUtterance(btnos.value);
+    var voiceName = voiceList.selectedOptions[0].getAttribute('data-name');
+    voices.forEach((voice) => {
+      if(voice.name === voiceName){
+        toSpeak.voice = voice;
+      }
+    })
+    synth.speak(toSpeak);
+  })
+  btnFrase27.addEventListener('click', () => {
+    var toSpeak = new SpeechSynthesisUtterance(btnFrase27.value);
+    var voiceName = voiceList.selectedOptions[0].getAttribute('data-name');
+    voices.forEach((voice) => {
+      if(voice.name === voiceName){
+        toSpeak.voice = voice;
+      }
+    })
+    synth.speak(toSpeak);
+  })
+  btncidades.addEventListener('click', () => {
+    var toSpeak = new SpeechSynthesisUtterance(btncidades.value);
+    var voiceName = voiceList.selectedOptions[0].getAttribute('data-name');
+    voices.forEach((voice) => {
+      if(voice.name === voiceName){
+        toSpeak.voice = voice;
+      }
+    })
+    synth.speak(toSpeak);
+  })
+  btngrandes.addEventListener('click', () => {
+    var toSpeak = new SpeechSynthesisUtterance(btngrandes.value);
+    var voiceName = voiceList.selectedOptions[0].getAttribute('data-name');
+    voices.forEach((voice) => {
+      if(voice.name === voiceName){
+        toSpeak.voice = voice;
+      }
+    })
+    synth.speak(toSpeak);
+  })
+  btnnas.addEventListener('click', () => {
+    var toSpeak = new SpeechSynthesisUtterance(btnnas.value);
+    var voiceName = voiceList.selectedOptions[0].getAttribute('data-name');
+    voices.forEach((voice) => {
+      if(voice.name === voiceName){
+        toSpeak.voice = voice;
+      }
+    })
+    synth.speak(toSpeak);
   })
   btnaqui2.addEventListener('click', () => {
     var toSpeak = new SpeechSynthesisUtterance(btnaqui2.value);
