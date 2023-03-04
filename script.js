@@ -1678,7 +1678,7 @@ $(document).ready(function () {
   })
  
   $(window).scroll(function() {
-  if ($(document).scrollTop() > 50) {
+  if ($(document).scrollTop() > 0) {
       $('.nav').addClass('affix');
       
   } else {

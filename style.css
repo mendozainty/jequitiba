@@ -110,11 +110,14 @@ button {
 }
 
 .nav {
+    background-color: #355641;
+    height: 100px;
     padding-top: 20px;
     padding-bottom: 20px;
     -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
     z-index: 300;
+    border-radius: 10px;
 }
 
 .container{
@@ -128,7 +131,7 @@ button {
     position: absolute;
     top: 25%;
     left: 20%;    
-    background-color: #06c066d8;
+    background-color: #355641;
     color: #fff;    
     font-size: large;
     padding: 20px 20px 20px 20px;
@@ -142,7 +145,7 @@ button {
     position: absolute;
     top: 16.66%;
     left: 20%;    
-    background-color: #06c066d8;
+    background-color: #355641;
     color: #fff;    
     font-size: large;
     padding: 20px 20px 20px 20px;
@@ -591,7 +594,7 @@ button {
 
 .affix {
     padding: 0;
-    background-color: #111;
+    background-color: #355641;
     position: fixed;
     z-index: 300;
 }
