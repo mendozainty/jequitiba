@@ -110,7 +110,7 @@ button {
 }
 
 .nav {
-    background-color: #355641;
+    background-color: #138e40ec;
     height: 100px;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -131,7 +131,7 @@ button {
     position: absolute;
     top: 25%;
     left: 20%;    
-    background-color: #355641;
+    background-color: #138e40ec;
     color: #fff;    
     font-size: large;
     padding: 20px 20px 20px 20px;
@@ -145,7 +145,7 @@ button {
     position: absolute;
     top: 16.66%;
     left: 20%;    
-    background-color: #355641;
+    background-color: #138e40ec;
     color: #fff;    
     font-size: large;
     padding: 20px 20px 20px 20px;
@@ -304,6 +304,19 @@ button {
     padding: 5px;
     margin: 0%;
     font-size: large;
+}
+
+.bombeiro {
+    padding: 5px;
+    margin: 0%;
+    font-size: large;
+    background-color: #06c066d8;
+}
+
+#bicicletaSemRodinhaDiv {
+    background-image: url('livroBombeiro.jpg');
+    width: 639px;
+    height: 800px;
 }
 
 /* Media qurey section */
